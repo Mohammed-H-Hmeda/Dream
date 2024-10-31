@@ -11,10 +11,12 @@ public class AGithubassign : MonoBehaviour
         string [] words= {"Cat", "Dog", "Car", "Pizza", "Hat", "Fish", "Tree", "Monkey", "Ball", "Bird"};
         int counter=7;
         string sentance="";
+
         while (counter>0){
             int index=Random.Range(0,10);
             string Randomword= words[index];
             sentance+=Randomword+" ";
+            
             if (counter==1)
                 Debug.Log(sentance);
             --counter;
