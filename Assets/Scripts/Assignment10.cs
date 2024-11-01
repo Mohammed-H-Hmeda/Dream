@@ -7,6 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+      string table="";
     //Define the Multiply Function:
     int Multiply(int num1, int num2)
      {
@@ -17,7 +18,15 @@ public class NewBehaviourScript : MonoBehaviour
     //In the Start method, create a for loop
      for(;num<11;num+=1)
      {
-        Debug.Log(num+"x"+"5"+'='+Multiply(5,num));
+      
+        table+=num+"x"+"5"+'='+Multiply(5,num);
+        if (num<10)
+        {
+         table+=",";
+        }
+        else if (num==10){
+         Debug.Log(table);
+        }
      }
     }
 
