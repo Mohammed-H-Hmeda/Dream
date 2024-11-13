@@ -2,21 +2,25 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class GameManagerr : MonoBehaviour
+namespace Assign14
 {
-    // Start is called before the first frame update
-    void Start()
+    public class GameManagerr : MonoBehaviour
     {
-        Character Player = new Character("MO", 100);
-        Character Enemy = new Character("KID", 100);
-        Debug.Log(Player.Name);
-        Debug.Log(Player.Health);
-        Debug.Log(Enemy.Name);
-        Debug.Log(Enemy.Health);
+        // Start is called before the first frame update
+        void Start()
+        {
+            Player Player = new Player("MO", 100);
+            Enemy Enemy = new Enemy("KIDO", 100);
+            Player.health = 10;
+            Enemy.health = 90;
+            Debug.Log(Player.Name);
+            Debug.Log(Player.Health);
+            Debug.Log(Enemy.Name);
+            Debug.Log(Enemy.Health);
+            Player.Heal(20);
+            Enemy.attack(10);
+            Debug.Log(Player.Health);
 
-        Player.Heal(100);
-        Enemy.Attack(50);
 
 
 
@@ -24,11 +28,14 @@ public class GameManagerr : MonoBehaviour
 
 
 
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
 
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }

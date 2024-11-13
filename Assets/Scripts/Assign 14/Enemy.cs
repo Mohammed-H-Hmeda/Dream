@@ -1,15 +1,22 @@
+using System.Buffers.Text;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Enemy : Character
+namespace Assign14
 {
-
-
-    public int attack(int amount)
+    public class Enemy : Character
     {
-        Health -= amount;
-        return Health;
-    }
+        Character Player=new Character("",0);
+        public Enemy(string Charname, int Charhealth) : base(Charname, Charhealth)
+        {
 
+        }
+        public int attack(int amount)
+        {   
+            Health -= amount;
+            return Health;
+        }
+
+
+    }
 }

@@ -2,41 +2,44 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
-
-public class Character
+namespace Assign14
 {
-    public string Name
+    public class Character
     {
-        get
+        public string name;
+        public string Name
         {
-            return Name;
-        }
-        set
-        {
-            Name = value;
-        }
-    }
-    public int Health
-    {
-        get
-        {
-            return Health;
-        }
-        set
-        {
-            if (value <= 100)
+            get
             {
-                Health = value;
+                return name;
             }
-            else
-                Debug.LogWarning("health should'nt be more than 100");
+            set
+            {
+                name = value;
+            }
         }
-    }
-    public Character(string playername, int playerhealth)
-    {
-        Health = playerhealth;
-        Name = playername;
-    }
+        public int health;
+        public int Health
+        {
+            get
+            {
+                return health;
+            }
+            set
+            {
+                if (health<100)
+                {
+                    health = value;
+                }
+               
+            }
+        }
+        public Character(string Charname, int Charhealth)
+        {
+            health = Charhealth;
+            name = Charname;
+        }
 
 
+    }
 }
