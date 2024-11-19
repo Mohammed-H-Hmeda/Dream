@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 /*Define a namespace named Assignment18 to contain all classes and structs
 for this assignment.*/
-namespace Assign18
+namespace Assign16
 {
 /*Inside the namespace, create a Position struct.*/
     public struct Position

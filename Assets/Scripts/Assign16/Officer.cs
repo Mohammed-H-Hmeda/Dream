@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Assign18
+namespace Assign16
 {
     /*and Officer that
 i   nherit from Character.*/

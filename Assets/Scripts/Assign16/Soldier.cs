@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Assign18
+namespace Assign16
 {
     /*In the same namespace, create two child classes Soldier that inherit from Character.*/
     public class Soldier : Character

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Assign18
+namespace Assign16
 {
     /*Define a new class CharacterTest inheriting from MonoBehaviour for
     testing.*/
@@ -16,10 +16,10 @@ namespace Assign18
             //Use the parameterized constructor for Officer
             Officer Max = new Officer("Max", 500, new Position(100, 200, 500));
             //and the default constructor for Soldier.
-            Soldier Steve=new Soldier();
+            Soldier Steve = new Soldier();
             Characters[0] = Max;
             Characters[1] = Steve;
-            
+
             //Use a for loop to call DisplayInfo() on each element in the array, demonstrating polymorphism.
             for (int index = 0; index < 2; index++)
             {

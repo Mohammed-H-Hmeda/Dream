@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-namespace Assign18
+namespace Assign16
 {
     //Within the same namespace, define a base class named Character.
     public class Character
