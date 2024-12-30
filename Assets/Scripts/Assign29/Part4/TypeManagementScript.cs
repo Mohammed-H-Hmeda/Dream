@@ -5,62 +5,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 namespace assign29
 {
-    //Create a Derived Class Cat:
-    //Implement ICanFight in the Cat Class:
-    public class Cat : Animal, ICanFight
+    public class TypeManagement : MonoBehaviour
     {
-        //Override the MakeSound() method to log "Meow!".
-        public override void Makesound()
-        {
-            Debug.Log("Meow");
-        }
-        //Add Move() method to log "Cat runs quickly.".
-        public void Move()
-        {
-            Debug.Log("Cat runs quickly");
-        }
-        //Add an Attack() method that logs "Cat attacks with claws!".
-        public void attack()
-        {
-            Debug.Log("Cat attacks with claws!");
-        }
-
-    }
-
-    //Create a New Class Warrior:
-    //Implement the ICanFight interface.
-    public class Warrior : ICanFight
-    {
-        //Add an Attack() method that logs "Warrior attacks with a sword!".
-        public void attack()
-        {
-            Debug.Log("Warrior attacks with a sword!");
-        }
-    }
-
-    //Create an Interface ICanFight:
-    public interface ICanFight
-    {
-        //Add a method Attack().
-        public void attack();
-    }
-
-    //Create a Base Class Animal:
-    public class Animal : MonoBehaviour
-    {
-
-        //Add a virtual method MakeSound() that logs "Animal sound".
-        public virtual void Makesound()
-        {
-            Debug.Log("Animal sound");
-        }
-
-        //Add a method Move() that logs "Animal moves.".
-        public void Move()
-        {
-            Debug.Log("Animal moves");
-        }
-
         void Start()
         {
             //Create a Cat object and upcast it (implicitly) to an Animal reference.
@@ -107,7 +53,63 @@ namespace assign29
 
         }
 
+    }
 
+    //Create a Derived Class Cat:
+    //Implement ICanFight in the Cat Class:
+    public class Cat : Animal, ICanFight
+    {
+        //Override the MakeSound() method to log "Meow!".
+        public override void Makesound()
+        {
+            Debug.Log("Meow");
+        }
+        //Add Move() method to log "Cat runs quickly.".
+        public void Move()
+        {
+            Debug.Log("Cat runs quickly");
+        }
+        //Add an Attack() method that logs "Cat attacks with claws!".
+        public void attack()
+        {
+            Debug.Log("Cat attacks with claws!");
+        }
+
+    }
+
+    //Create a New Class Warrior:
+    //Implement the ICanFight interface.
+    public class Warrior : ICanFight
+    {
+        //Add an Attack() method that logs "Warrior attacks with a sword!".
+        public void attack()
+        {
+            Debug.Log("Warrior attacks with a sword!");
+        }
+    }
+
+    //Create an Interface ICanFight:
+    public interface ICanFight
+    {
+        //Add a method Attack().
+        public void attack();
+    }
+
+    //Create a Base Class Animal:
+    public class Animal
+    {
+
+        //Add a virtual method MakeSound() that logs "Animal sound".
+        public virtual void Makesound()
+        {
+            Debug.Log("Animal sound");
+        }
+
+        //Add a method Move() that logs "Animal moves.".
+        public void Move()
+        {
+            Debug.Log("Animal moves");
+        }
 
     }
 }

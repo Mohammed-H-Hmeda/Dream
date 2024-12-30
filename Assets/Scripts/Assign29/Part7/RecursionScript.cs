@@ -39,9 +39,9 @@ public class RecursionScript : MonoBehaviour
     {
         //Log the results of both methods for n = 10 and n = 30.
         int recResult = FibonacciRecursive(10);
-        Debug.Log(recResult);
+        Debug.Log($"Recursion result={recResult}");
         int IteResult = FibonacciIterative(5);
-        Debug.Log(IteResult);
+        Debug.Log($"Iteration result={IteResult}");
     }
 
     // Update is called once per frame
