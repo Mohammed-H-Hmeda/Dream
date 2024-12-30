@@ -24,10 +24,13 @@ public class CallByValue : MonoBehaviour
         int num1=5;
         int num2=10;
         addition(num1);
+        //result is 5 (doesn't change)
         Debug.Log("Calling by value "+num1);
         refaddition(ref num2);
+        //result is 20
         Debug.Log("Calling by refernce "+ num2);
         outaddition(out num1);
+        //result is 25
         Debug.Log("Calling by out "+ num1);
        
         
